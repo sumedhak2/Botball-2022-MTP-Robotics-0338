@@ -7,7 +7,6 @@ int main()
    
 	//initial setup
     create_connect();
-    printf("deez nuts");
     set_servo_position(3, 1300);
     
     
