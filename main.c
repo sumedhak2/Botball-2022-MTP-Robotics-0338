@@ -1,4 +1,3 @@
-
 #include <kipr/wombat.h>
 
 int main()
@@ -11,7 +10,7 @@ int main()
     set_servo_position(3, 2047);
     msleep(1100);
     create_drive_direct(200,200);
-    msleep(4600);
+    msleep(4750);
     set_create_total_angle(0);
     create_spin_CCW(80);
     msleep(2050);
@@ -24,28 +23,27 @@ int main()
     
     //Grabing BOTBALL and going bcack
     create_drive_direct(200,200);
-    msleep(4400);
+    msleep(4000);
     set_servo_position(3, 450);
     msleep(500);
     create_drive_direct(-200,-200);
-    msleep(2500);
+    msleep(2700);
     
     //:)
-
+   
     //Going to Transporter and dropping it
     set_create_total_angle(0);
     create_spin_CW(170);
-    msleep(1050);
+    msleep(950);
     create_drive_direct(200, 200);
-    msleep(1800);
-    set_servo_position(0, 1700);
-    msleep(1000);
+    msleep(2600);
     create_drive_direct(100,100);
-    msleep(300);
-    set_servo_position(3, 2047);
+    msleep(1000);
+    set_servo_position(0, 1950);
     msleep(200);
-    set_servo_position(0, 1100);
+    set_servo_position(3, 2047);
     msleep(200);
     create_disconnect();
     return 0;
 }
+
