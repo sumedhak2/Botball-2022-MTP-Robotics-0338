@@ -136,6 +136,7 @@ int main()
     enable_servo(0);
     enable_servo(2);
     enable_servo(3);
+    msleep(10000);
     set_servo_position(0,0);
     set_servo_position(2,2100);
     set_servo_position(3,1440);
@@ -163,4 +164,3 @@ int main()
     
     return 0;
 }
-
