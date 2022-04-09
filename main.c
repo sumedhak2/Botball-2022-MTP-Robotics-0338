@@ -4,7 +4,8 @@
 
 int main(){
     wait_for_light(0);
-   	create_connect();
+    create_connect();
+    shut_down_in(100);
     enable_servo(0);
     enable_servo(3);
     
